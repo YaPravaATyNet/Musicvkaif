@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="10dp"
+    tools:context=".Fragments.ContactsFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Адрес: "
+            android:textSize="@dimen/contacts_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/contacts_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contacts_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contacts_space">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Телефоны: "
+            android:textSize="@dimen/contacts_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/contacts_phones"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/contacts_text"
+            android:autoLink="phone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contacts_space">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сайт: "
+            android:textSize="@dimen/contacts_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/contacts_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="@dimen/contacts_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contacts_space">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Группа ВКонтакте: "
+            android:textSize="@dimen/contacts_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/contacts_vk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="@dimen/contacts_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contacts_space">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram: "
+            android:textSize="@dimen/contacts_text"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/contacts_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="@dimen/contacts_text"/>
+    </LinearLayout>
+
+</LinearLayout>
